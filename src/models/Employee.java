@@ -58,7 +58,7 @@ public class Employee {
     @Column(name = "dalete_flag", nullable = false)
     private Integer delete_flag;
 
-    public Integer gerId() {
+    public Integer getId() {
         return id;
     }
 

@@ -52,10 +52,10 @@ public class Employee {
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
-    @Column(name = "update_at", nullable = false)
+    @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
-    @Column(name = "dalete_flag", nullable = false)
+    @Column(name = "delete_flag", nullable = false)
     private Integer delete_flag;
 
     public Integer getId() {
@@ -94,7 +94,7 @@ public class Employee {
         return admin_flag;
     }
 
-    public void setAdmin_flag (Integer admin_flag) {
+    public void setAdmin_flag(Integer admin_flag) {
         this.admin_flag = admin_flag;
     }
 
@@ -121,5 +121,4 @@ public class Employee {
     public void setDelete_flag(Integer delete_flag) {
         this.delete_flag = delete_flag;
     }
-
 }

@@ -55,12 +55,6 @@ public class Report {
     @Column(name = "content", nullable = false)
     private String content;
 
-    @Column(name = "work_time", nullable = false)
-    private Timestamp work_time;
-
-    @Column(name = "leave_time", nullable = false)
-    private Timestamp leave_time;
-
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
@@ -105,22 +99,6 @@ public class Report {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public Timestamp getWork_time() {
-        return work_time;
-    }
-
-    public void setWork_time(Timestamp work_time) {
-        this.work_time = work_time;
-    }
-
-    public Timestamp getLeave_time() {
-        return leave_time;
-    }
-
-    public void setLeave_time(Timestamp leave_time) {
-        this.leave_time = leave_time;
     }
 
     public Timestamp getCreated_at() {

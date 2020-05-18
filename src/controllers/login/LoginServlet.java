@@ -51,7 +51,7 @@ public class LoginServlet extends HttpServlet {
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
-    // ログイン処理を実行
+ // ログイン処理を実行
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
      // 認証結果を格納する変数
         Boolean check_result = false;
@@ -98,5 +98,6 @@ public class LoginServlet extends HttpServlet {
             response.sendRedirect(request.getContextPath() + "/");
         }
     }
+
 
 }
